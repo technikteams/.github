@@ -10,7 +10,7 @@
 
 <p align="center">
   Licht in die Planung: Veranstaltungen, Dienstplan, Aufgaben, Technik und Inventar an einem Ort.<br>
-  Für alle, die Veranstaltungstechnik im Team machen, ob in der Gemeinde, an der Schule oder im Verein.
+  Für alle, die Veranstaltungstechnik im Team machen, ob in der Kirchengemeinde, an der Schule oder im Verein.
 </p>
 
 <p align="center">
