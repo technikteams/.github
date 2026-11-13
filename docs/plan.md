@@ -37,3 +37,10 @@ oder Links auf private Repositories. Es vergibt keine offene Markenlizenz.
 - Asset-Prüfung mit Originalquellen und ohne Quellen gegen das Lockfile erfolgreich.
 - Keine zusätzlichen Laufzeit-Abhängigkeiten; App und Brand unverändert.
 - Die lokale Vorschau ersetzt keine Prüfung des später veröffentlichten Org-Profils.
+
+## 🔄 Stand · 2026-11-13
+
+- Profil auf den Stand der App `v0.1.0-beta.2` gebracht: Überschrift „Die Software für euer Technikteam.“, allgemein für Technikteams in der Veranstaltungstechnik (Gemeinde, Schule und Verein als Beispiele), sechs Bereiche mit Verweis auf die Themenseiten der Website, Mail, Chat und Passwörter, geschlossene Beta.
+- Wortlaut und Aussagen folgen der Website (`../website/docs/design.md`, „Gefunden werden“) und damit der App-Spezifikation.
+- Die Verweise auf `technikteams.de/…` funktionieren erst, wenn die Website mit den Themenseiten ausgerollt ist.
+- Beschreibung der Organisation und der Repositories auf GitHub im selben Wortlaut gesetzt.

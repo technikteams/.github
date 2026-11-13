@@ -18,7 +18,8 @@ docs/plan.md            Umfang, Quellen und Prüfstand
 
 Texte direkt in `profile/README.md` bearbeiten. Zielgruppe und Funktionsumfang
 richten sich nach der App-Spezifikation, der Entwicklungsstand nach dem App-Plan.
-Geplante Funktionen als solche benennen und beim Fortschritt den Abschnitt
+Der Wortlaut folgt der Website (`../website`): dieselbe Überschrift, dieselben
+Bereiche, allgemein für Technikteams. Beim Fortschritt den Abschnitt
 „Wo wir stehen“ aktualisieren.
 
 Das Profil verwendet GitHub-Markdown und unterstützte HTML-Elemente. Das Logo

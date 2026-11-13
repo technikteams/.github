@@ -6,46 +6,51 @@
   </picture>
 </p>
 
-<h3 align="center">Plattform für Technikteams zur Veranstaltungsplanung,<br>Diensteinteilung und Aufgabenverwaltung.</h3>
+<h3 align="center">Die Software für euer Technikteam.</h3>
 
 <p align="center">
-  Für Technikteams in Kirchen, Schulen und ähnlichen Einrichtungen.
+  Licht in die Planung: Veranstaltungen, Dienstplan, Aufgaben, Technik und Inventar an einem Ort.<br>
+  Für alle, die Veranstaltungstechnik im Team machen, ob in der Gemeinde, an der Schule oder im Verein.
 </p>
 
 <p align="center">
   <a href="https://technikteams.de"><strong>technikteams.de ↗</strong></a>
   &nbsp; · &nbsp;
-  <a href="#was-entsteht">Was entsteht</a>
+  <a href="#was-die-app-kann">Was die App kann</a>
   &nbsp; · &nbsp;
-  <a href="#wo-wir-stehen">Entwicklungsstand</a>
+  <a href="#wo-wir-stehen">Wo wir stehen</a>
 </p>
 
 ---
 
-## Was entsteht
+## Was die App kann
 
-Wer kümmert sich um den Ton? Wann ist Aufbau? Was muss noch vorbereitet werden? Wir entwickeln technikteams.de, damit Technikteams diese Fragen an einem Ort klären und ihre gemeinsame Arbeit organisieren können.
+Wer steht am Samstag am Pult? Wann ist Aufbau? Was muss noch mit? technikteams.de begleitet eine Veranstaltung von der ersten Anfrage, bis das letzte Kabel wieder im Case liegt.
 
-| Bereich | Dafür entwickeln wir technikteams.de |
-| :--- | :--- |
-| 📅 **Events** | **Was findet wann statt?**<br>Termine, Ablauf und technische Anforderungen gemeinsam planen. |
-| 🎛️ **Dienste** | **Wer übernimmt was?**<br>Besetzung für Ton, Licht, Video und weitere Bereiche anfragen. |
-| ✅ **Aufgaben** | **Was ist noch zu tun?**<br>Aufgaben verteilen und Checklisten für Vorbereitung, Auf- und Abbau nutzen. |
+| | Bereich | Was ihr damit macht |
+| :-: | :--- | :--- |
+| 📅 | **[Veranstaltungsplanung](https://technikteams.de/event-planning)** | Anfragen per Formular annehmen, aus Vorlagen planen, Aufbau, Probe und Abbau als zugehörige Events führen. |
+| 🎛️ | **[Dienstplan](https://technikteams.de/shift-planning)** | Positionen anfragen, zusagen oder absagen, Ersatz über die Dienstbörse finden. |
+| 🎬 | **[Ablaufplan](https://technikteams.de/run-of-show)** | Ein Plan mit einer Spalte je Bereich. In der Show-Ansicht führt eine Person, alle Geräte folgen. |
+| 🎚️ | **[Technikplanung](https://technikteams.de/tech-planning)** | Kanalliste mit Linecheck, Materialliste mit Packliste zum Scannen, Kabelbedarf und Stromkreise. |
+| ✅ | **[Aufgaben und Checklisten](https://technikteams.de/tasks-checklists)** | Fälligkeiten, die mit dem Event wandern, und Checklisten für Aufbau, Soundcheck und Abbau. |
+| 📦 | **[Inventar](https://technikteams.de/inventory)** | Geräte mit Nummer, QR-Etikett, Prüffrist und Lebenslauf, dazu Inventur am Handy und Ausleihe. |
+
+Dazu gehören **Mail, Chat und Passwörter** unter eigener Adresse. Anmelden muss man sich nur an einer Stelle: mit dem Konto der App.
 
 ## Für euren Teamalltag
 
-- **Ein Konto, mehrere Teams.** Wer in mehreren Einrichtungen mitarbeitet, soll zwischen seinen Teams wechseln können, ohne mehrere Konten zu brauchen.
-- **Jedes Team für sich.** Organisationen behalten ihre eigenen Veranstaltungen, Mitglieder und Zuständigkeiten. Gäste sollen gezielt bei einzelnen Veranstaltungen mitarbeiten können.
-- **Dienste mit Rückmeldung.** Eine Einteilung ist eine Anfrage: Teammitglieder sagen zu oder ab, damit die Planung verlässlich bleibt.
-- **Am Rechner und am Smartphone.** Die Plattform soll am Schreibtisch genauso nutzbar sein wie unterwegs oder beim Aufbau.
+- **Ein Konto, mehrere Teams.** Wer in mehreren Teams mitarbeitet, sieht alle eigenen Dienste auf einem Start. Die Daten der Teams bleiben getrennt.
+- **Dienste mit Rückmeldung.** Jede Einteilung ist eine Anfrage: Erst mit der Zusage steht der Dienst.
+- **Menschen von außen ohne Konto.** Chor, Band oder Veranstaltende füllen Formulare aus und lesen ihre Info-Seite über einen Link.
+- **Im Browser, am Laptop und am Handy.** Mit demselben Umfang, auf Wunsch als Web-App auf dem Startbildschirm.
+- **Eigener Server in Deutschland.** Keine Werbung, keine Tracker. Jedes Team exportiert seine Daten, jede Person ihre eigenen.
 
 ## Wo wir stehen
 
-**🚧 technikteams.de ist in Entwicklung.**
+**🚧 Geschlossene Beta.** Die App steht im Stand `v0.1.0-beta.2`. Neue Teams kommen zurzeit nur auf Einladung dazu.
 
-Aktuell arbeiten wir an der Grundlage: Anmeldung, Einladungen und der Verwaltung getrennter Organisationen. Darauf folgen Teamverwaltung, Veranstaltungsplanung, Diensteinteilung sowie Aufgaben und Checklisten. Die oben beschriebenen Planungsfunktionen sind unser Entwicklungsziel und noch nicht verfügbar.
-
-Unser Ziel ist eine übersichtliche, alltagstaugliche Plattform für die Menschen, die Veranstaltungstechnik gemeinsam vorbereiten und betreuen.
+Wenn euer Technikteam Interesse hat, meldet euch über **[technikteams.de](https://technikteams.de/#join)**: Eine kurze Mail genügt.
 
 ---
 
