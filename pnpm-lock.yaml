@@ -9,15 +9,15 @@ importers:
   .:
     devDependencies:
       '@technikteams/brand':
-        specifier: 2.3.0
-        version: 2.3.0
+        specifier: 3.0.0
+        version: 3.0.0
 
 packages:
 
-  '@technikteams/brand@2.3.0':
-    resolution: {integrity: sha512-bA5MrNEuFY6VAMkC+d+Vt3XzZJOQTSXi5d/7HAL0GCzJT/AHHX/nekaqEiYuwCsxpH7w7pZsCi4e6fwwTeHJDQ==, tarball: https://npm.pkg.github.com/download/@technikteams/brand/2.3.0/ec0878b081936cd919c49b0b4b9297a30ee3ac68}
+  '@technikteams/brand@3.0.0':
+    resolution: {integrity: sha512-XpDdvK9slF/gZeqvHX6lcByDLDOR4g13SccBBcminwMQTB9V7zNtwbLPYull7enjWRk6qrx/EFUm2Y3g8hTWSw==, tarball: https://npm.pkg.github.com/download/@technikteams/brand/3.0.0/e9adac1282b37def54135ba7fc589ff04889650b}
     engines: {node: '>=24 <25'}
 
 snapshots:
 
-  '@technikteams/brand@2.3.0': {}
+  '@technikteams/brand@3.0.0': {}

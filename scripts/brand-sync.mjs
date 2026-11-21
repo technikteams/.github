@@ -20,11 +20,11 @@ const packageRoot = path.join(root, "node_modules", "@technikteams", "brand");
 const lockPath = path.join(root, "brand.lock.json");
 const files = [
   ...["light", "dark"].map((theme) => ({
-    source: `assets/svg/logos/horizontal/technikteams-logo-horizontal-${theme}.svg`,
+    source: `dist/logo/svg/technikteams-logo-horizontal-${theme}.svg`,
     target: `profile/assets/logo-horizontal-${theme}.svg`,
   })),
   // The wordmark is drawn from Montserrat; its licence travels with the logos.
-  { source: "assets/fonts/OFL-montserrat.txt", target: "profile/assets/OFL.txt" },
+  { source: "dist/fonts/OFL-montserrat.txt", target: "profile/assets/OFL.txt" },
 ];
 const sha256 = (content) => createHash("sha256").update(content).digest("hex");
 
@@ -34,8 +34,9 @@ async function fromPackage() {
     throw new Error("@technikteams/brand ist nicht installiert: pnpm install (Token: README).");
   }
   const pkg = JSON.parse(await readFile(path.join(packageRoot, "package.json"), "utf8"));
-  const manifest = JSON.parse(await readFile(path.join(packageRoot, "assets/manifest.json"), "utf8"));
-  const hashes = new Map(manifest.files.map((entry) => [entry.path, entry.sha256]));
+  // dist/manifest.json lists every file of the package relative to dist/ with its SHA-256.
+  const manifest = JSON.parse(await readFile(path.join(packageRoot, "dist/manifest.json"), "utf8"));
+  const hashes = new Map(Object.entries(manifest.files).map(([file, entry]) => [`dist/${file}`, entry.sha256]));
   const contents = new Map();
   const entries = [];
   for (const file of files) {
