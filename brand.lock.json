@@ -1,21 +1,21 @@
 {
   "brand": {
     "package": "@technikteams/brand",
-    "version": "2.3.0"
+    "version": "3.0.0"
   },
   "files": [
     {
-      "source": "assets/svg/logos/horizontal/technikteams-logo-horizontal-light.svg",
+      "source": "dist/logo/svg/technikteams-logo-horizontal-light.svg",
       "target": "profile/assets/logo-horizontal-light.svg",
       "sha256": "0c0372394ae3a12e57685a1547735376c41170e849ceb14a3321480b9552c772"
     },
     {
-      "source": "assets/svg/logos/horizontal/technikteams-logo-horizontal-dark.svg",
+      "source": "dist/logo/svg/technikteams-logo-horizontal-dark.svg",
       "target": "profile/assets/logo-horizontal-dark.svg",
       "sha256": "9f70924eb1dd8f73e2d44e1593edddc7edc403629be06c0a2307c30fd1e354b6"
     },
     {
-      "source": "assets/fonts/OFL-montserrat.txt",
+      "source": "dist/fonts/OFL-montserrat.txt",
       "target": "profile/assets/OFL.txt",
       "sha256": "f429f739351287574c0c3175a9222bb3e49c7cad3f568a04f2c08d74c107724e"
     }
