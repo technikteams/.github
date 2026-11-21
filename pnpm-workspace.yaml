@@ -1,0 +1,2 @@
+minimumReleaseAgeExclude:
+  - '@technikteams/brand@2.3.0'
