@@ -1,0 +1,16 @@
+{
+  "name": "@technikteams/profile",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.27.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "brand:sync": "node scripts/brand-sync.mjs",
+    "check": "node scripts/brand-sync.mjs --check"
+  },
+  "devDependencies": {
+    "@technikteams/brand": "2.3.0"
+  }
+}
