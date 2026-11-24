@@ -16,9 +16,9 @@
       devShells = forAll (pkgs: {
         default = pkgs.mkShell {
           packages = [
-            pkgs.nodejs_24
-            pkgs.pnpm
             pkgs.gh
+            # external/: vendir sync of the approved brand files (handbook CODE-8)
+            pkgs.vendir
           ];
         };
       });

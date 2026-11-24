@@ -1,0 +1,17 @@
+apiVersion: vendir.k14s.io/v1alpha1
+kind: Config
+directories:
+  # Public repository: only the brand files the profile shows, never the manifest (it lists the whole
+  # private release) and never the handbook (handbook CODE-8). Renovate raises the tag.
+  - path: external/brand
+    contents:
+      - path: .
+        git:
+          url: https://github.com/technikteams/brand.git
+          ref: v4.0.0
+        includePaths:
+          - dist/logo/svg/technikteams-logo-horizontal-light.svg
+          - dist/logo/svg/technikteams-logo-horizontal-dark.svg
+          - dist/fonts/OFL-montserrat.txt
+        legalPaths: []
+        newRootPath: dist
