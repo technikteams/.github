@@ -1,8 +1,8 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/technikteams/.github/main/profile/assets/logo-horizontal-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/technikteams/.github/main/profile/assets/logo-horizontal-light.svg">
-    <img src="https://raw.githubusercontent.com/technikteams/.github/main/profile/assets/logo-horizontal-light.svg" width="480" alt="technikteams.de">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/technikteams/.github/main/external/brand/logo/svg/technikteams-logo-horizontal-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/technikteams/.github/main/external/brand/logo/svg/technikteams-logo-horizontal-light.svg">
+    <img src="https://raw.githubusercontent.com/technikteams/.github/main/external/brand/logo/svg/technikteams-logo-horizontal-light.svg" width="480" alt="technikteams.de">
   </picture>
 </p>
 

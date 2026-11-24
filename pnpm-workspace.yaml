@@ -1,3 +1,0 @@
-minimumReleaseAgeExclude:
-  # Our own package: a new brand release is used right after publishing.
-  - '@technikteams/brand'

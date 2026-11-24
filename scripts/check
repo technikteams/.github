@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# The gate of this repository: every file the public profile links into this repository exists.
+set -euo pipefail
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
+
+prefix="https://raw.githubusercontent.com/technikteams/.github/main/"
+missing=0
+while IFS= read -r url; do
+	path="${url#"$prefix"}"
+	if [[ ! -f $path ]]; then
+		echo "❌ profile/README.md links $path, which does not exist" >&2
+		missing=1
+	fi
+done < <(grep -o "${prefix}[^\"') ]*" profile/README.md | sort -u)
+
+if ! grep -q "$prefix" profile/README.md; then
+	echo "❌ profile/README.md links no file of this repository" >&2
+	missing=1
+fi
+[[ $missing -eq 0 ]] && echo "✅ check: every linked file exists"
+exit "$missing"

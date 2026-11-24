@@ -8,11 +8,13 @@ Die eigentliche Profilseite steht in **[profile/README.md](profile/README.md)**.
 
 ```text
 profile/README.md       Öffentlich sichtbares Organisationsprofil
-profile/assets/         Unveränderte Kopien aus @technikteams/brand: Logos für helle und dunkle
-                        Hintergründe, Lizenz der Schrift
-brand.lock.json         Version des Pakets und SHA-256 der Kopien
-scripts/brand-sync.mjs  Übernahme und Prüfung der Kopien
-flake.nix               Werkzeuge: Node.js 24 und pnpm
+external/brand/         Unveränderte Dateien aus einem Release von brand, per vendir: Logos für
+                        helle und dunkle Hintergründe, Lizenz der Schrift
+vendir.yml              Welche Dateien aus welchem Release (nur freigegebene, kein Manifest)
+vendir.lock.yml         Der genaue Commit des Releases
+renovate.json           Renovate hebt das Release-Tag und holt die Dateien neu
+scripts/check           Prüftor: jede im Profil verlinkte Datei existiert
+flake.nix               Werkzeuge: gh und vendir
 docs/plan.md            Umfang, Quellen und Prüfstand
 ```
 
@@ -31,20 +33,20 @@ Dateien aus diesem Repository an.
 
 ## Marken-Assets aktualisieren
 
-Die Logos kommen aus dem privaten Paket `@technikteams/brand` in GitHub Packages,
-mit fester Version in `package.json`. Werkzeuge kommen aus der Flake
-(`nix develop` oder direnv). Zum Installieren braucht pnpm einen Token mit
-`read:packages`; der Verweis darauf steht in der Nutzer-Konfiguration, nicht im
-Repository:
+Die Logos kommen aus einem Release des privaten Repos `brand`. vendir holt davon
+nur die freigegebenen Dateien nach `external/brand/` (Handbuch CODE-8): die zwei
+Logos und die Schriftlizenz, kein Manifest und nichts sonst, weil dieses
+Repository öffentlich ist. Neue Releases bringt Renovate als PR. Von Hand, mit
+Werkzeugen aus der Flake (`nix develop` oder direnv) und Lesezugriff auf `brand`
+(etwa über `gh auth setup-git`):
 
 ```sh
-pnpm config set --location=global '//npm.pkg.github.com/:_authToken' '${NODE_AUTH_TOKEN}'  # einmalig
-export NODE_AUTH_TOKEN=$(gh auth token)
-pnpm install
-pnpm add -D -E @technikteams/brand@<version>   # neue Version, eigene Änderung
-pnpm brand:sync                                # Kopien und Lockfile erneuern
-pnpm check                                     # Kopien gegen Lockfile und Paket prüfen
+# Tag in vendir.yml ändern, dann:
+vendir sync      # Dateien und vendir.lock.yml erneuern
+scripts/check    # jede im Profil verlinkte Datei vorhanden?
 ```
+
+Eine weitere Datei kommt nur nach ausdrücklicher Freigabe in `includePaths`.
 
 Logo-Dateien niemals von Hand ändern. `light` und `dark` bezeichnen den
 Hintergrund. Die Einbindung verwendet die Original-SVGs einschließlich ihres
@@ -52,7 +54,7 @@ Schutzraums.
 
 Die Markenrechte bleiben bestehen. Dieses Repository vergibt keine offene
 Lizenz für die Logos; die Logo-Wortmarke basiert auf Montserrat. Die zugehörige
-SIL Open Font License liegt unter [profile/assets/OFL.txt](profile/assets/OFL.txt).
+SIL Open Font License liegt unter [external/brand/fonts/OFL-montserrat.txt](external/brand/fonts/OFL-montserrat.txt).
 
 ## Auf GitHub anzeigen
 
