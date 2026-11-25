@@ -2,11 +2,11 @@ apiVersion: vendir.k14s.io/v1alpha1
 directories:
 - contents:
   - git:
-      commitTitle: 'feat!: Release per vendir statt npm-Paket, dist/ mit Rechtehinweis
-        (Handbuch CODE-8)...'
-      sha: 3489a8dbf33e0fea7e7ca018cf54c7b56d98969b
+      commitTitle: 'fix: Rechtehinweis ohne Paket, flake check gleich npm run check,
+        Marke 4.1.1...'
+      sha: f428c9014a610675be0209bb3647eab2c92ec14c
       tags:
-      - v4.0.0
+      - v4.1.1
     path: .
   path: external/brand
 kind: LockConfig
